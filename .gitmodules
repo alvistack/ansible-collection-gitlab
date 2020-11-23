@@ -1,0 +1,64 @@
+[submodule "roles/ansible"]
+	path = roles/ansible
+	url = https://github.com/alvistack/ansible-role-ansible.git
+	branch = develop
+[submodule "roles/bootstrap"]
+	path = roles/bootstrap
+	url = https://github.com/alvistack/ansible-role-bootstrap.git
+	branch = develop
+[submodule "roles/docker"]
+	path = roles/docker
+	url = https://github.com/alvistack/ansible-role-docker.git
+	branch = develop
+[submodule "roles/git"]
+	path = roles/git
+	url = https://github.com/alvistack/ansible-role-git.git
+	branch = develop
+[submodule "roles/gitlab_ce"]
+	path = roles/gitlab_ce
+	url = https://github.com/alvistack/ansible-role-gitlab_ce.git
+	branch = develop
+[submodule "roles/gitlab_ee"]
+	path = roles/gitlab_ee
+	url = https://github.com/alvistack/ansible-role-gitlab_ee.git
+	branch = develop
+[submodule "roles/gitlab_runner"]
+	path = roles/gitlab_runner
+	url = https://github.com/alvistack/ansible-role-gitlab_runner.git
+	branch = develop
+[submodule "roles/kernel"]
+	path = roles/kernel
+	url = https://github.com/alvistack/ansible-role-kernel.git
+	branch = develop
+[submodule "roles/libvirt"]
+	path = roles/libvirt
+	url = https://github.com/alvistack/ansible-role-libvirt.git
+	branch = develop
+[submodule "roles/locales"]
+	path = roles/locales
+	url = https://github.com/alvistack/ansible-role-locales.git
+	branch = develop
+[submodule "roles/packer"]
+	path = roles/packer
+	url = https://github.com/alvistack/ansible-role-packer.git
+	branch = develop
+[submodule "roles/python"]
+	path = roles/python
+	url = https://github.com/alvistack/ansible-role-python.git
+	branch = develop
+[submodule "roles/sshd"]
+	path = roles/sshd
+	url = https://github.com/alvistack/ansible-role-sshd.git
+	branch = develop
+[submodule "roles/timezone"]
+	path = roles/timezone
+	url = https://github.com/alvistack/ansible-role-timezone.git
+	branch = develop
+[submodule "roles/vagrant"]
+	path = roles/vagrant
+	url = https://github.com/alvistack/ansible-role-vagrant.git
+	branch = develop
+[submodule "roles/vim"]
+	path = roles/vim
+	url = https://github.com/alvistack/ansible-role-vim.git
+	branch = develop
