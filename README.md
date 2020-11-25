@@ -1,11 +1,11 @@
-# Ansible Collection for Gnome
+# Ansible Collection for GitLab
 
-[![Travis](https://img.shields.io/travis/com/alvistack/ansible-collection-gnome.svg)](https://travis-ci.com/alvistack/ansible-collection-gnome)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-collection-gnome.svg)](https://github.com/alvistack/ansible-collection-gnome/releases)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-collection-gnome.svg)](https://github.com/alvistack/ansible-collection-gnome/blob/master/LICENSE)
-[![Ansible Collection](https://img.shields.io/badge/galaxy-alvistack.gnome-blue.svg)](https://galaxy.ansible.com/alvistack/gnome)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-collection-gitlab/master)](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
+[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/releases)
+[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/blob/master/LICENSE)
+[![Ansible Collection](https://img.shields.io/badge/galaxy-alvistack.gitlab-blue.svg)](https://galaxy.ansible.com/alvistack/gitlab)
 
-Ansible collection for deploying Gnome.
+Ansible collection for deploying GitLab.
 
 This Ansible collection provides Ansible playbooks and roles for the deployment and configuration of an [Gnome](https://www.gnome.org/) environment.
 
