@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: all
+- hosts: ansible:gitlab_runner
   remote_user: root
   become: true
   tasks:
     - include_role:
         name: vagrant
       tags: vagrant
-    
+
     - include_role:
         name: libvirt
       tags: libvirt
