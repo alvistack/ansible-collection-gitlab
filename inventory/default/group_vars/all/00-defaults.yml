@@ -23,7 +23,7 @@ gitlab_version: "13.6.0"
 # gitlab-runner
 gitlab_runner_concurrent: "1"
 gitlab_runner_runners_name: "alvistack/gitlab-runner"
-gitlab_runner_runners_url: "https://gitlab.com/"
+gitlab_runner_runners_url: ~
 gitlab_runner_runners_token: ~
 gitlab_runner_runners_builds_dir: "/home/vagrant"
 gitlab_runner_runners_cache_dir: "/var/cache/gitlab-runner"
