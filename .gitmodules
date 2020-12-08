@@ -62,3 +62,7 @@
 	path = roles/vim
 	url = https://github.com/alvistack/ansible-role-vim.git
 	branch = develop
+[submodule "roles/virtualbox"]
+	path = roles/virtualbox
+	url = https://github.com/alvistack/ansible-role-virtualbox.git
+	branch = develop
