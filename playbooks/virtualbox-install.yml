@@ -14,16 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: all:!ansible
+- hosts: ansible:gitlab_runner
   remote_user: root
   become: true
   tasks:
-    - name: reboot
-      reboot:
-        reboot_timeout: 1800
-        test_command: bash -c 'whoami && sleep 60'
-      loop: "{{ ansible_play_hosts }}"
-      delegate_to: "{{ item }}"
-      run_once: true
-      changed_when: false
-      ignore_errors: true
+    - include_role:
+        name: vagrant
+      tags: vagrant
+
+    - include_role:
+        name: virtualbox
+      tags: virtualbox

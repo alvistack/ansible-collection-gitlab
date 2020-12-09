@@ -18,7 +18,7 @@
   remote_user: root
   become: true
   tasks:
-    - name: gnome-shell --version
-      command: gnome-shell --version
+    - name: uname -a
+      command: uname -a
       register: result
       changed_when: result is not succeeded

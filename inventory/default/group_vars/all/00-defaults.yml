@@ -18,14 +18,14 @@
 kernel_release: "mainline"
 
 # gitlab_ce / gitlab_ee
-gitlab_version: "13.6.0"
+gitlab_version: "13.6.2"
 
 # gitlab-runner
+gitlab_runner_version: "13.6.0"
 gitlab_runner_concurrent: "1"
 gitlab_runner_runners_name: "alvistack/gitlab-runner"
 gitlab_runner_runners_url: ~
 gitlab_runner_runners_token: ~
-gitlab_runner_runners_builds_dir: "/home/vagrant"
 gitlab_runner_runners_cache_dir: "/var/cache/gitlab-runner"
 gitlab_runner_runners_vagrant_image: "alvistack/gitlab-runner"
 gitlab_runner_runners_vagrant_cpus: "4"
@@ -34,3 +34,6 @@ gitlab_runner_runners_vagrant_nested: true
 gitlab_runner_runners_vagrant_management_network_name: "gitlab-runner"
 gitlab_runner_runners_vagrant_management_network_address: "172.16.121.0/24"
 gitlab_runner_runners_vagrant_boxes_dir: "/home/vagrant/.vagrant.d/boxes"
+
+# vagrant
+vagrant_default_provider: "libvirt"
