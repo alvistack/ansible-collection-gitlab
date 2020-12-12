@@ -4,8 +4,11 @@ localhost ansible_host=127.0.0.1 ansible_connection=local
 [ansible]
 localhost
 
-[gitlab]
+[gitlab_ce]
 localhost
+
+[gitlab_ee]
+#localhost
 
 [gitlab_runner]
 localhost

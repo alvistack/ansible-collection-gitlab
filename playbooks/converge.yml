@@ -17,3 +17,10 @@
 - import_playbook: hosts-install.yml
 - import_playbook: kernel-install.yml
 - import_playbook: ansible-install.yml
+- import_playbook: packer-install.yml
+- import_playbook: docker-install.yml
+- import_playbook: virtualbox-install.yml
+- import_playbook: libvirt-install.yml
+- import_playbook: gitlab_ce-install.yml
+- import_playbook: gitlab_ee-install.yml
+- import_playbook: gitlab_runner-install.yml

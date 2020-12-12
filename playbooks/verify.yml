@@ -14,11 +14,44 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: all
+- hosts: gitlab_ce:gitlab_ee
   remote_user: root
   become: true
   tasks:
-    - name: uname -a
-      command: uname -a
+    - name: gitlab --version
+      environment:
+        PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      command: gitlab --version
+      register: result
+      changed_when: result is not succeeded
+
+- hosts: gitlab_runner
+  remote_user: root
+  become: true
+  tasks:
+    - name: packer version
+      environment:
+        PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      command: packer version
+      register: result
+      changed_when: result is not succeeded
+
+    - name: docker version
+      command: docker version
+      register: result
+      changed_when: result is not succeeded
+
+    - name: vboxmanage --version
+      command: vboxmanage --version
+      register: result
+      changed_when: result is not succeeded
+
+    - name: virsh --version
+      command: virsh --version
+      register: result
+      changed_when: result is not succeeded
+
+    - name: gitlab-runner --version
+      command: gitlab-runner --version
       register: result
       changed_when: result is not succeeded
