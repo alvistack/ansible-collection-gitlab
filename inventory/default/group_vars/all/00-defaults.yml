@@ -18,7 +18,7 @@
 kernel_release: "mainline"
 
 # gitlab_ce / gitlab_ee
-gitlab_version: "13.6.2"
+gitlab_version: "13.7.0"
 
 # gitlab-runner
 gitlab_runner_version: "13.7.0"
