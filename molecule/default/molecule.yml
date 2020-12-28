@@ -22,6 +22,9 @@ driver:
       ansible_connection: local
 platforms:
   - name: localhost
+    groups:
+      - gitlab_ce
+      - gitlab_runner
 lint: |
   set -euo pipefail
   yamllint .
