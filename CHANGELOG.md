@@ -4,6 +4,8 @@
 
 ### Major Changes
 
+  - Simplify Molecule scenario for vagrant-libvirt
+
 ## 4.5.0 - 2020-08-26
 
   - Ininitial release for Ansible 2.10 or higher
