@@ -1,4 +1,4 @@
----
+#!/bin/bash
 
 # (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
 #
@@ -14,21 +14,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-namespace: alvistack
-name: gitlab
-description: Ansible Collection for GitLab
+set -euxo pipefail
 
-version: VERSION
-readme: README.md
-license: Apache-2.0
+kubectl get pv -o name | while read line
+do
+    namespace="$(kubectl get $line -o jsonpath='{.spec.claimRef.namespace}')"
+    name="$(kubectl get $line -o jsonpath='{.spec.claimRef.name}')"
+    path="volumes/csi/csi-vol-$(kubectl get $line -o jsonpath='{.spec.csi.volumeHandle}' | sed 's/^0001-0004-ceph-0000000000000001-//g')"
 
-repository: https://github.com/alvistack/ansible-collection-gitlab
-documentation: https://github.com/alvistack/ansible-collection-gitlab
-homepage: https://github.com/alvistack/ansible-collection-gitlab
-issues: https://github.com/alvistack/ansible-collection-gitlab/issues
+    if [[ -f $path/.meta ]]
+    then
+        path="$(cat $path/.meta | egrep -e '^path = ' | sed 's/^path = \///g')"
+    fi
 
-dependencies: {}
-tags:
-  - system
-authors:
-  - "Wong Hoi Sing Edison <hswong3i@pantarei-design.com>"
+    mkdir -p symlinks/$namespace
+    cd symlinks/$namespace
+    rm -rf $name
+    ln -fs ../../$path $name
+    cd ../../
+done

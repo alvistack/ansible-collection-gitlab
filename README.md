@@ -7,7 +7,7 @@
 
 Ansible collection for deploying GitLab.
 
-This Ansible collection provides Ansible playbooks and roles for the deployment and configuration of an [Gnome](https://www.gnome.org/) environment.
+This Ansible collection provides Ansible playbooks and roles for the deployment and configuration of an [GitLab](https://www.gitlab.org/) environment.
 
 ## Requirements
 
@@ -29,8 +29,8 @@ This collection was designed for:
 Start by cloning the repository, checkout the corresponding branch, and init with `git submodule`, then bootstrap Python3 + Ansible with provided helper script:
 
     # GIT clone the development branch
-    git clone --branch develop https://github.com/alvistack/ansible-collection-gnome
-    cd ansible-collection-gnome
+    git clone --branch develop https://github.com/alvistack/ansible-collection-gitlab
+    cd ansible-collection-gitlab
     
     # Setup Roles with GIT submodule
     git submodule init
@@ -47,10 +47,10 @@ Start by cloning the repository, checkout the corresponding branch, and init wit
 
 ### AIO
 
-All-in-one (AIO) build is a great way to perform an Gnome build for:
+All-in-one (AIO) build is a great way to perform an GitLab build for:
 
   - A development environment
-  - An overview of how all the Gnome services fit together
+  - An overview of how all the GitLab services fit together
   - A simple lab deployment
 
 Simply execule our default Molecule test case and it will deploy all default components into your localhost:
