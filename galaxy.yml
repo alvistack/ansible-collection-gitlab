@@ -15,17 +15,17 @@
 # limitations under the License.
 
 namespace: alvistack
-name: gnome
-description: Ansible Collection for Gnome
+name: gitlab
+description: Ansible Collection for GitLab
 
 version: VERSION
 readme: README.md
 license: Apache-2.0
 
-repository: https://github.com/alvistack/ansible-collection-gnome
-documentation: https://github.com/alvistack/ansible-collection-gnome
-homepage: https://github.com/alvistack/ansible-collection-gnome
-issues: https://github.com/alvistack/ansible-collection-gnome/issues
+repository: https://github.com/alvistack/ansible-collection-gitlab
+documentation: https://github.com/alvistack/ansible-collection-gitlab
+homepage: https://github.com/alvistack/ansible-collection-gitlab
+issues: https://github.com/alvistack/ansible-collection-gitlab/issues
 
 dependencies: {}
 tags:
