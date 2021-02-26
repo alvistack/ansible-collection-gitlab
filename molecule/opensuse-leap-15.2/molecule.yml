@@ -30,6 +30,7 @@ platforms:
       - "volume_cache = 'writeback'"
       - "storage :file, bus: 'virtio', cache: 'writeback'"
     groups:
+      - ansible
       - gitlab_ce
       - gitlab_runner
 lint: |
