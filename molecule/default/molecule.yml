@@ -23,6 +23,7 @@ driver:
 platforms:
   - name: localhost
     groups:
+      - ansible
       - gitlab_ce
       - gitlab_runner
 lint: |
