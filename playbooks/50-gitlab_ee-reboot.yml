@@ -14,15 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- import_playbook: 00-hosts-install.yml
-- import_playbook: 10-kernel-install.yml
-- import_playbook: 20-ansible-install.yml
-
-- import_playbook: 30-packer-install.yml
-- import_playbook: 30-docker-install.yml
-- import_playbook: 30-virtualbox-install.yml
-- import_playbook: 30-libvirt-install.yml
-
-- import_playbook: 50-gitlab_ce-install.yml
-- import_playbook: 50-gitlab_ee-install.yml
-- import_playbook: 50-gitlab_runner-install.yml
+- hosts: gitlab_ce:!ansible
+  remote_user: root
+  become: true
+  tasks:
+    - name: reboot
+      reboot:
+        reboot_timeout: 1800
+        test_command: bash -c 'whoami && sleep 60'
+      loop: "{{ ansible_play_hosts }}"
+      delegate_to: "{{ item }}"
+      run_once: true
+      changed_when: false
+      ignore_errors: true
