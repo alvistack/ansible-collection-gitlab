@@ -14,15 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- import_playbook: 00-hosts-install.yml
-- import_playbook: 10-kernel-install.yml
-- import_playbook: 20-ansible-install.yml
-
-- import_playbook: 30-packer-install.yml
-- import_playbook: 30-docker-install.yml
-- import_playbook: 30-virtualbox-install.yml
-- import_playbook: 30-libvirt-install.yml
-
-- import_playbook: 50-gitlab_ce-install.yml
-- import_playbook: 50-gitlab_ee-install.yml
-- import_playbook: 50-gitlab_runner-install.yml
+- import_playbook: 50-gitlab_ce-reboot.yml
+- import_playbook: 50-gitlab_ee-reboot.yml
+- import_playbook: 50-gitlab_runner-reboot.yml
+- import_playbook: 90-ansible-reboot.yml
