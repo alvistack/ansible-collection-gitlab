@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # gitlab_ce / gitlab_ee
-gitlab_version: "13.11.1"
+gitlab_version: "13.11.3"
 
 # gitlab-runner
 gitlab_runner_version: "13.11.0"
