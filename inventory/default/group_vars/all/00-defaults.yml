@@ -22,9 +22,8 @@ gitlab_release: "13.11"
 
 # gitlab-runner
 gitlab_runner_concurrent: "1"
-gitlab_runner_runners_name: "alvistack/gitlab-runner"
-gitlab_runner_runners_url: ~
-gitlab_runner_runners_token: ~
+gitlab_runner_runners:
+  - { name: "alvistack/gitlab-runner", url: ~, token: ~ }
 gitlab_runner_runners_cache_dir: "/var/cache/gitlab-runner"
 gitlab_runner_runners_vagrant_cpus: "4"
 gitlab_runner_runners_vagrant_memory: "16384"
