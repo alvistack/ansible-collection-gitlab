@@ -41,8 +41,8 @@
       register: result
       changed_when: result is not succeeded
 
-    - name: vboxmanage --version
-      command: vboxmanage --version
+    - name: VBoxManage --version
+      command: VBoxManage --version
       register: result
       changed_when: result is not succeeded
 
