@@ -32,6 +32,17 @@ platforms:
     groups:
       - ansible
       - gitlab_ce
+  - name: ${MOLECULE_INSTANCE_NAME}-2
+    box: alvistack/centos-7
+    cpu: 2
+    memory: 4096
+    provider_raw_config_args:
+      - "disk_bus = 'virtio'"
+      - "nic_model_type = 'virtio'"
+      - "video_type = 'virtio'"
+      - "disk_driver :cache => 'writeback'"
+      - "storage :file, bus: 'virtio', cache: 'writeback'"
+    groups:
       - gitlab_runner
 lint: |
   set -euxo pipefail
