@@ -18,7 +18,7 @@
 vagrant_default_provider: "libvirt"
 
 # gitlab_ce / gitlab_ee
-gitlab_release: "13.12"
+gitlab_release: "14.0"
 
 # gitlab-runner
 gitlab_runner_concurrent: "1"
