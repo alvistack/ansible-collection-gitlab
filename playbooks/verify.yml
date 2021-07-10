@@ -29,10 +29,10 @@
   remote_user: root
   become: true
   tasks:
-    - name: packer version
+    - name: /usr/bin/packer --version
       environment:
         PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-      command: packer version
+      command: /usr/bin/packer --version
       register: result
       changed_when: result is not succeeded
 
