@@ -66,3 +66,7 @@
 	path = roles/virtualbox
 	url = https://github.com/alvistack/ansible-role-virtualbox.git
 	branch = develop
+[submodule "roles/zram_generator"]
+	path = roles/zram_generator
+	url = https://github.com/alvistack/ansible-role-zram_generator.git
+	branch = develop
