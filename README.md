@@ -1,13 +1,19 @@
 # Ansible Collection for GitLab
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-collection-gitlab/master)](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/releases)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/blob/master/LICENSE)
-[![Ansible Collection](https://img.shields.io/badge/galaxy-alvistack.gitlab-blue.svg)](https://galaxy.ansible.com/alvistack/gitlab)
+[![Gitlab pipeline
+status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-collection-gitlab/master)](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
+[![GitHub
+release](https://img.shields.io/github/release/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/releases)
+[![GitHub
+license](https://img.shields.io/github/license/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/blob/master/LICENSE)
+[![Ansible
+Collection](https://img.shields.io/badge/galaxy-alvistack.gitlab-blue.svg)](https://galaxy.ansible.com/alvistack/gitlab)
 
 Ansible collection for deploying GitLab.
 
-This Ansible collection provides Ansible playbooks and roles for the deployment and configuration of an [GitLab](https://www.gitlab.org/) environment.
+This Ansible collection provides Ansible playbooks and roles for the
+deployment and configuration of an [GitLab](https://www.gitlab.org/)
+environment.
 
 ## Requirements
 
@@ -26,7 +32,9 @@ This collection was designed for:
 
 ### Bootstrap Ansible and Roles
 
-Start by cloning the repository, checkout the corresponding branch, and init with `git submodule`, then bootstrap Python3 + Ansible with provided helper script:
+Start by cloning the repository, checkout the corresponding branch, and
+init with `git submodule`, then bootstrap Python3 + Ansible with
+provided helper script:
 
     # GIT clone the development branch
     git clone --branch develop https://github.com/alvistack/ansible-collection-gitlab
@@ -53,14 +61,18 @@ All-in-one (AIO) build is a great way to perform an GitLab build for:
   - An overview of how all the GitLab services fit together
   - A simple lab deployment
 
-Simply execule our default Molecule test case and it will deploy all default components into your localhost:
+Simply execule our default Molecule test case and it will deploy all
+default components into your localhost:
 
     # Run Molecule test case
     molecule test -s default
 
 ### Molecule
 
-You could also run our [Molecule](https://molecule.readthedocs.io/en/stable/) test cases if you have [Vagrant](https://www.vagrantup.com/) and [Libvirt](https://libvirt.org/) installed, e.g.
+You could also run our
+[Molecule](https://molecule.readthedocs.io/en/stable/) test cases if you
+have [Vagrant](https://www.vagrantup.com/) and
+[Libvirt](https://libvirt.org/) installed, e.g.
 
     # Bootstrap Vagrant and Libvirt
     ./scripts/bootstrap-vagrant.sh
@@ -68,12 +80,14 @@ You could also run our [Molecule](https://molecule.readthedocs.io/en/stable/) te
     # Run Molecule on Ubuntu 20.04
     molecule converge -s ubuntu-20.04
 
-Please refer to [.travis.yml](.travis.yml) for more information on running Molecule.
+Please refer to [.travis.yml](.travis.yml) for more information on
+running Molecule.
 
 ## License
 
   - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Docs released under [CC
+    BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
