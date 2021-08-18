@@ -1,0 +1,27 @@
+---
+
+# (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# gitlab_runner
+gitlab_runner_concurrent: "1"
+gitlab_runner_runners:
+  - { name: "alvistack/gitlab-runner", url: ~, token: ~ }
+gitlab_runner_runners_cache_dir: "/var/cache/gitlab-runner"
+gitlab_runner_runners_vagrant_cpus: "4"
+gitlab_runner_runners_vagrant_memory: "16384"
+gitlab_runner_runners_vagrant_nested: true
+gitlab_runner_runners_vagrant_management_network_name: "gitlab-runner"
+gitlab_runner_runners_vagrant_management_network_address: "172.16.121.0/24"
+gitlab_runner_runners_vagrant_boxes_dir: "/home/vagrant/.vagrant.d/boxes"
