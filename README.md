@@ -26,23 +26,26 @@ This collection was designed for:
 
 ### Bootstrap Ansible and Roles
 
-Start by cloning the repository, checkout the corresponding branch, and init with `git submodule`, then bootstrap Python3 + Ansible with provided helper script:
+Start by cloning the repository, checkout the corresponding branch, and init with `git submodule`, then install Ansible:
 
-    # GIT clone the development branch
-    git clone --branch develop https://github.com/alvistack/ansible-collection-gitlab
-    cd ansible-collection-gitlab
-    
-    # Setup Roles with GIT submodule
-    git submodule init
-    git submodule sync
-    git submodule update
+    # GIT checkout development branch
+    mkdir -p /opt/ansible-collection-gitlab
+    cd /opt/ansible-collection-gitlab
+    git init
+    git remote add alvistack https://github.com/alvistack/ansible-collection-gitlab.git
+    git fetch --all --prune
+    git checkout alvistack/develop -- .
+    git submodule sync --recursive
+    git submodule update --init --recursive
     
     # Bootstrap Ansible
-    ./scripts/bootstrap-ansible.sh
+    # See https://software.opensuse.org/download/package?package=ansible&project=home%3Aalvistack
+    echo 'deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_20.04/ /' | tee /etc/apt/sources.list.d/home:alvistack.list
+    curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_20.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    apt update
+    apt install ansible
     
-    # Confirm the version of Python3, PIP3 and Ansible
-    python3 --version
-    pip3 --version
+    # Confirm the version of Ansible
     ansible --version
 
 ### AIO
@@ -62,13 +65,10 @@ Simply execule our default Molecule test case and it will deploy all default com
 
 You could also run our [Molecule](https://molecule.readthedocs.io/en/stable/) test cases if you have [Vagrant](https://www.vagrantup.com/) and [Libvirt](https://libvirt.org/) installed, e.g.
 
-    # Bootstrap Vagrant and Libvirt
-    ./scripts/bootstrap-vagrant.sh
-    
     # Run Molecule on Ubuntu 20.04
     molecule converge -s ubuntu-20.04
 
-Please refer to [.travis.yml](.travis.yml) for more information on running Molecule.
+Please refer to [.gitlab-ci.yml](.gitlab-ci.yml) for more information on running Molecule.
 
 ## License
 
