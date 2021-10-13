@@ -34,9 +34,9 @@ Start by cloning the repository, checkout the corresponding branch, and init wit
     mkdir -p /opt/ansible-collection-gitlab
     cd /opt/ansible-collection-gitlab
     git init
-    git remote add alvistack https://github.com/alvistack/ansible-collection-gitlab.git
+    git remote add upstream https://github.com/alvistack/ansible-collection-gitlab.git
     git fetch --all --prune
-    git checkout alvistack/develop -- .
+    git checkout upstream/develop -- .
     git submodule sync --recursive
     git submodule update --init --recursive
     
