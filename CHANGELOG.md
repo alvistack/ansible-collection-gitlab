@@ -4,6 +4,8 @@
 
 ### Major Changes
 
+  - Replace docker with podman
+
 ## 20211231.1.3 - 2021-12-31
 
 ### Major Changes

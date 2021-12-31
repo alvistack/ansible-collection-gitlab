@@ -20,5 +20,40 @@
   tasks:
     - name: include role
       include_role:
-        name: docker
-      tags: docker
+        name: runc
+      tags: runc
+
+    - name: include role
+      include_role:
+        name: crun
+      tags: crun
+
+    - name: include role
+      include_role:
+        name: containers_common
+      tags: containers_common
+
+    - name: include role
+      include_role:
+        name: containernetworking_plugins
+      tags: containernetworking_plugins
+
+    - name: include role
+      include_role:
+        name: conmon
+      tags: conmon
+
+    - name: include role
+      include_role:
+        name: skopeo
+      tags: skopeo
+
+    - name: include role
+      include_role:
+        name: buildah
+      tags: buildah
+
+    - name: include role
+      include_role:
+        name: podman
+      tags: podman

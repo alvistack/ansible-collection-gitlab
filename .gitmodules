@@ -6,9 +6,25 @@
 	path = roles/bootstrap
 	url = https://github.com/alvistack/ansible-role-bootstrap.git
 	branch = develop
-[submodule "roles/docker"]
-	path = roles/docker
-	url = https://github.com/alvistack/ansible-role-docker.git
+[submodule "roles/buildah"]
+	path = roles/buildah
+	url = https://github.com/alvistack/ansible-role-buildah.git
+	branch = develop
+[submodule "roles/conmon"]
+	path = roles/conmon
+	url = https://github.com/alvistack/ansible-role-conmon.git
+	branch = develop
+[submodule "roles/containernetworking_plugins"]
+	path = roles/containernetworking_plugins
+	url = https://github.com/alvistack/ansible-role-containernetworking_plugins.git
+	branch = develop
+[submodule "roles/containers_common"]
+	path = roles/containers_common
+	url = https://github.com/alvistack/ansible-role-containers_common.git
+	branch = develop
+[submodule "roles/crun"]
+	path = roles/crun
+	url = https://github.com/alvistack/ansible-role-crun.git
 	branch = develop
 [submodule "roles/git"]
 	path = roles/git
@@ -42,9 +58,21 @@
 	path = roles/packer
 	url = https://github.com/alvistack/ansible-role-packer.git
 	branch = develop
+[submodule "roles/podman"]
+	path = roles/podman
+	url = https://github.com/alvistack/ansible-role-podman.git
+	branch = develop
 [submodule "roles/python"]
 	path = roles/python
 	url = https://github.com/alvistack/ansible-role-python.git
+	branch = develop
+[submodule "roles/runc"]
+	path = roles/runc
+	url = https://github.com/alvistack/ansible-role-runc.git
+	branch = develop
+[submodule "roles/skopeo"]
+	path = roles/skopeo
+	url = https://github.com/alvistack/ansible-role-skopeo.git
 	branch = develop
 [submodule "roles/sshd"]
 	path = roles/sshd
