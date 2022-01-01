@@ -19,7 +19,7 @@
 - import_playbook: 20-ansible-install.yml
 
 - import_playbook: 30-packer-install.yml
-- import_playbook: 30-docker-install.yml
+- import_playbook: 30-podman-install.yml
 - import_playbook: 30-virtualbox-install.yml
 - import_playbook: 30-libvirt-install.yml
 
