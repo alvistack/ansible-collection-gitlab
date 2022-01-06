@@ -5,7 +5,6 @@
 ### Major Changes
 
   - Skip package upgrade before running molecule
-  - Replace docker with podman
 
 ## 20211231.1.3 - 2021-12-31
 
