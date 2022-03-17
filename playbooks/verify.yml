@@ -21,7 +21,7 @@
     - name: gitlab --version
       environment:
         PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-      command: gitlab --version
+      ansible.builtin.command: gitlab --version
       register: result
       changed_when: result is not succeeded
 
@@ -32,26 +32,26 @@
     - name: /usr/bin/packer --version
       environment:
         PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-      command: /usr/bin/packer --version
+      ansible.builtin.command: /usr/bin/packer --version
       register: result
       changed_when: result is not succeeded
 
     - name: docker version
-      command: docker version
+      ansible.builtin.command: docker version
       register: result
       changed_when: result is not succeeded
 
     - name: VBoxManage --version
-      command: VBoxManage --version
+      ansible.builtin.command: VBoxManage --version
       register: result
       changed_when: result is not succeeded
 
     - name: virsh --version
-      command: virsh --version
+      ansible.builtin.command: virsh --version
       register: result
       changed_when: result is not succeeded
 
     - name: gitlab-runner --version
-      command: gitlab-runner --version
+      ansible.builtin.command: gitlab-runner --version
       register: result
       changed_when: result is not succeeded
