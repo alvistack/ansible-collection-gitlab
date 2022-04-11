@@ -18,7 +18,7 @@ namespace: alvistack
 name: gitlab
 description: Ansible Collection for GitLab
 
-version: VERSION
+version: 0.0.0
 readme: README.md
 license: Apache-2.0
 
