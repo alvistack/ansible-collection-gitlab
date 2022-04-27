@@ -20,10 +20,10 @@
   tasks:
     - name: include role
       ansible.builtin.include_role:
-        name: vagrant
-      tags: vagrant
+        name: alvistack.vagrant
+      tags: alvistack.vagrant
 
     - name: include role
       ansible.builtin.include_role:
-        name: libvirt
-      tags: libvirt
+        name: alvistack.libvirt
+      tags: alvistack.libvirt

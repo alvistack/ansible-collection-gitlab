@@ -20,5 +20,5 @@
   tasks:
     - name: include role
       ansible.builtin.include_role:
-        name: gitlab_ee
-      tags: gitlab_ee
+        name: alvistack.gitlab_ee
+      tags: alvistack.gitlab_ee

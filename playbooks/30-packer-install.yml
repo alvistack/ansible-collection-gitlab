@@ -20,5 +20,5 @@
   tasks:
     - name: include role
       ansible.builtin.include_role:
-        name: packer
-      tags: packer
+        name: alvistack.packer
+      tags: alvistack.packer
