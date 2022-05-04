@@ -66,10 +66,6 @@
 	path = roles/alvistack.python
 	url = https://github.com/alvistack/ansible-role-python.git
 	branch = develop
-[submodule "roles/alvistack.runc"]
-	path = roles/alvistack.runc
-	url = https://github.com/alvistack/ansible-role-runc.git
-	branch = develop
 [submodule "roles/alvistack.skopeo"]
 	path = roles/alvistack.skopeo
 	url = https://github.com/alvistack/ansible-role-skopeo.git
