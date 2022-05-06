@@ -20,10 +20,10 @@
   tasks:
     - name: include role
       ansible.builtin.include_role:
-        name: alvistack.vagrant
-      tags: alvistack.vagrant
+        name: vagrant
+      tags: vagrant
 
     - name: include role
       ansible.builtin.include_role:
-        name: alvistack.virtualbox
-      tags: alvistack.virtualbox
+        name: virtualbox
+      tags: virtualbox
