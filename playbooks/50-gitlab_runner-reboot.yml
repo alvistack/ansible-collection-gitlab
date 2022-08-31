@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: gitlab_runner:!ansible
+- name: 50-gitlab_runner-reboot | gitlab_runner:!ansible
+  hosts: gitlab_runner:!ansible
   remote_user: root
   become: true
   tasks:
