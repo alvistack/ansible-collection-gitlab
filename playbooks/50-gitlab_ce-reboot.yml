@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: gitlab_ce:!ansible
+- name: 50-gitlab_ce-reboot | gitlab_ce:!ansible
+  hosts: gitlab_ce:!ansible
   remote_user: root
   become: true
   tasks:

@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: gitlab_ce
+- name: 50-gitlab_ce-install | gitlab_ce
+  hosts: gitlab_ce
   remote_user: root
   become: true
   tasks:

@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: gitlab_runner
+- name: 50-gitlab_runner-install | gitlab_runner
+  hosts: gitlab_runner
   remote_user: root
   become: true
   tasks:

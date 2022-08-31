@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: gitlab_ce:gitlab_ee
+- name: verify | gitlab_ce:gitlab_ee
+  hosts: gitlab_ce:gitlab_ee
   remote_user: root
   become: true
   tasks:
@@ -25,7 +26,8 @@
       register: result
       changed_when: result is not succeeded
 
-- hosts: gitlab_runner
+- name: verify | gitlab_runner
+  hosts: gitlab_runner
   remote_user: root
   become: true
   tasks:
