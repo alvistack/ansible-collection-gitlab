@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: import playbook 50-gitlab_ce-reboot
+- name: import playbook 50-gitlab_ce-reboot.yml
   import_playbook: 50-gitlab_ce-reboot.yml
 
-- name: import playbook 50-gitlab_ee-reboot
+- name: import playbook 50-gitlab_ee-reboot.yml
   import_playbook: 50-gitlab_ee-reboot.yml
 
-- name: import playbook 50-gitlab_runner-reboot
+- name: import playbook 50-gitlab_runner-reboot.yml
   import_playbook: 50-gitlab_runner-reboot.yml
 
-- name: import playbook 90-ansible-reboot
+- name: import playbook 90-ansible-reboot.yml
   import_playbook: 90-ansible-reboot.yml
