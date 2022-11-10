@@ -17,12 +17,12 @@ This collection require Ansible community package 4.10 or higher.
 
 This collection was designed for:
 
-  - Ubuntu 18.04, 20.04, 22.04, 22.10
-  - CentOS 7, 8 Stream, 9 Stream
-  - openSUSE Leap 15.3, Leap 15.4, Tumbleweed
-  - Debian 10, 11, Testing
-  - Fedora 35, 36, 37, Rawhide
-  - RHEL 7, 8, 9
+-   Ubuntu 18.04, 20.04, 22.04, 22.10
+-   CentOS 7, 8 Stream, 9 Stream
+-   openSUSE Leap 15.4, Tumbleweed
+-   Debian 10, 11, Testing
+-   Fedora 35, 36, 37, Rawhide
+-   RHEL 7, 8, 9
 
 ## Quick Start
 
@@ -39,13 +39,13 @@ Start by cloning the repository, checkout the corresponding branch, and init wit
     git checkout upstream/develop -- .
     git submodule sync --recursive
     git submodule update --init --recursive
-    
+
     # Bootstrap Ansible
     echo 'deb http://downloadcontent.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /' | tee /etc/apt/sources.list.d/home:alvistack.list
     curl -fsSL https://downloadcontent.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
     apt update
     apt install ansible
-    
+
     # Confirm the version of Ansible
     ansible --version
 
@@ -53,9 +53,9 @@ Start by cloning the repository, checkout the corresponding branch, and init wit
 
 All-in-one (AIO) build is a great way to perform an GitLab build for:
 
-  - A development environment
-  - An overview of how all the GitLab services fit together
-  - A simple lab deployment
+-   A development environment
+-   An overview of how all the GitLab services fit together
+-   A simple lab deployment
 
 Simply execule our default Molecule test case and it will deploy all default components into your localhost:
 
@@ -83,11 +83,11 @@ Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](
 
 ## License
 
-  - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+-   Code released under [Apache License 2.0](LICENSE)
+-   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
-  - Wong Hoi Sing Edison
-      - <https://twitter.com/hswong3i>
-      - <https://github.com/hswong3i>
+-   Wong Hoi Sing Edison
+    -   <https://twitter.com/hswong3i>
+    -   <https://github.com/hswong3i>
