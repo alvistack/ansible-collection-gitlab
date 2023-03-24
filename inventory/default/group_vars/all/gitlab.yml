@@ -15,4 +15,4 @@
 # limitations under the License.
 
 # gitlab_ce / gitlab_ee
-gitlab_release: "15.9"
+gitlab_release: "15.10"
