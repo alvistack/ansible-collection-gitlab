@@ -26,11 +26,6 @@ platforms:
       - ansible
       - gitlab_ce
       - gitlab_runner
-lint: |
-  set -euxo pipefail
-  flake8
-  yamllint .
-  ansible-lint
 dependency:
   name: galaxy
   options:
