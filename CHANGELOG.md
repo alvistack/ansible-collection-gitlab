@@ -4,6 +4,7 @@
 
 ### Major Changes
 
+-   Remove Fedora 36 support
 -   Support Fedora 38
 
 ## 20230329.1.1 - 2023-03-29
