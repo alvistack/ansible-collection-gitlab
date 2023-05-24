@@ -2,14 +2,20 @@
 
 <a href="https://alvistack.com" title="AlviStack" target="_blank"><img src="/alvistack.svg" height="75" alt="AlviStack"></a>
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-collection-gitlab/master)](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
-[![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/tags)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/blob/master/LICENSE)
-[![Ansible Collection](https://img.shields.io/badge/galaxy-alvistack.gitlab-blue.svg)](https://galaxy.ansible.com/alvistack/gitlab)
+[![Gitlab pipeline
+status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-collection-gitlab/master)](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
+[![GitHub
+tag](https://img.shields.io/github/tag/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/tags)
+[![GitHub
+license](https://img.shields.io/github/license/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/blob/master/LICENSE)
+[![Ansible
+Collection](https://img.shields.io/badge/galaxy-alvistack.gitlab-blue.svg)](https://galaxy.ansible.com/alvistack/gitlab)
 
 Ansible collection for deploying GitLab.
 
-This Ansible collection provides Ansible playbooks and roles for the deployment and configuration of an [GitLab](https://www.gitlab.org/) environment.
+This Ansible collection provides Ansible playbooks and roles for the
+deployment and configuration of an [GitLab](https://www.gitlab.org/)
+environment.
 
 ## Requirements
 
@@ -28,7 +34,9 @@ This collection was designed for:
 
 ### Bootstrap Ansible and Roles
 
-Start by cloning the repository, checkout the corresponding branch, and init with `git submodule`, then install Ansible (see <https://software.opensuse.org/download/package?package=ansible&project=home%3Aalvistack>):
+Start by cloning the repository, checkout the corresponding branch, and
+init with `git submodule`, then install Ansible (see
+<https://software.opensuse.org/download/package?package=ansible&project=home%3Aalvistack>):
 
     # GIT checkout development branch
     mkdir -p /opt/ansible-collection-gitlab
@@ -57,34 +65,46 @@ All-in-one (AIO) build is a great way to perform an GitLab build for:
 -   An overview of how all the GitLab services fit together
 -   A simple lab deployment
 
-Simply execule our default Molecule test case and it will deploy all default components into your localhost:
+Simply execule our default Molecule test case and it will deploy all
+default components into your localhost:
 
     # Run Molecule test case
     molecule test -s default
 
 ### Molecule
 
-You could also run our [Molecule](https://molecule.readthedocs.io/en/stable/) test cases if you have [Vagrant](https://www.vagrantup.com/) and [Libvirt](https://libvirt.org/) installed, e.g.
+You could also run our
+[Molecule](https://molecule.readthedocs.io/en/stable/) test cases if you
+have [Vagrant](https://www.vagrantup.com/) and
+[Libvirt](https://libvirt.org/) installed, e.g.
 
     # Run Molecule on Ubuntu 22.04
     molecule converge -s ubuntu-22.04
 
-Please refer to [.gitlab-ci.yml](.gitlab-ci.yml) for more information on running Molecule.
+Please refer to [.gitlab-ci.yml](.gitlab-ci.yml) for more information on
+running Molecule.
 
 ## Versioning
 
 ### `YYYYMMDD.Y.Z`
 
-Release tags could be find from [GitHub Release](https://github.com/alvistack/ansible-collection-gitlab/tags) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
+Release tags could be find from [GitHub
+Release](https://github.com/alvistack/ansible-collection-gitlab/tags) of
+this repository. Thus using these tags will ensure you are running the
+most up to date stable version of this image.
 
 ### `YYYYMMDD.0.0`
 
-Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+Version tags ended with `.0.0` are rolling release rebuild by [GitLab
+pipeline](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
+in weekly basis. Thus using these tags will ensure you are running the
+latest packages provided by the base image project.
 
 ## License
 
 -   Code released under [Apache License 2.0](LICENSE)
--   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+-   Docs released under [CC BY
+    4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
