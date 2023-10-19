@@ -54,6 +54,10 @@
 	path = roles/locales
 	url = https://github.com/alvistack/ansible-role-locales.git
 	branch = develop
+[submodule "roles/nginx"]
+	path = roles/nginx
+	url = https://github.com/alvistack/ansible-role-nginx.git
+	branch = develop
 [submodule "roles/packer"]
 	path = roles/packer
 	url = https://github.com/alvistack/ansible-role-packer.git
