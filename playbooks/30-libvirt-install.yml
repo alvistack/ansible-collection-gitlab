@@ -22,9 +22,7 @@
     - name: include role
       ansible.builtin.include_role:
         name: vagrant
-      tags: vagrant
 
     - name: include role
       ansible.builtin.include_role:
         name: libvirt
-      tags: libvirt
