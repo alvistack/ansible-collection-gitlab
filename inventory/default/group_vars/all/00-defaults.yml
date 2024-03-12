@@ -15,4 +15,4 @@
 # limitations under the License.
 
 # vagrant
-vagrant_default_provider: "libvirt"
+vagrant_default_provider: libvirt
