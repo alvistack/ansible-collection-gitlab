@@ -15,4 +15,4 @@
 # limitations under the License.
 
 # gitlab_ce
-gitlab_release: "16.11"
+gitlab_release: "17.0"
