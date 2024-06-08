@@ -2,6 +2,7 @@
 
 ## YYYYMMDD.Y.Z - TBC
 
+- Support openSUSE Leap 15.6
 - Remove Fedora 38 support
 
 ## 20240424.1.1 - 2024-04-01
