@@ -14,7 +14,7 @@
 # limitations under the License.
 
 - name: import playbook 00-hosts-install.yml
-  import_playbook: "00-hosts-install.yml"
+  import_playbook: 00-hosts-install.yml
 
 - name: import playbook 10-kernel-install.yml
   import_playbook: 10-kernel-install.yml
