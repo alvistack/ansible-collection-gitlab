@@ -2,14 +2,10 @@
 
 <a href="https://alvistack.com" title="AlviStack" target="_blank"><img src="/alvistack.svg" height="75" alt="AlviStack"></a>
 
-[![Gitlab pipeline
-status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-collection-gitlab/master)](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
-[![GitHub
-tag](https://img.shields.io/github/tag/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/tags)
-[![GitHub
-license](https://img.shields.io/github/license/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/blob/master/LICENSE)
-[![Ansible
-Collection](https://img.shields.io/badge/galaxy-alvistack.gitlab-blue.svg)](https://galaxy.ansible.com/alvistack/gitlab)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-collection-gitlab/master)](https://gitlab.com/alvistack/ansible-collection-gitlab/-/pipelines)
+[![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/tags)
+[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-collection-gitlab.svg)](https://github.com/alvistack/ansible-collection-gitlab/blob/master/LICENSE)
+[![Ansible Collection](https://img.shields.io/badge/galaxy-alvistack.gitlab-blue.svg)](https://galaxy.ansible.com/alvistack/gitlab)
 
 Ansible collection for deploying GitLab.
 
@@ -27,7 +23,7 @@ This collection was designed for:
 - AlmaLinux 8, 9
 - openSUSE Leap 15.6, Tumbleweed
 - Debian 12, Testing
-- Fedora 40, 41, Rawhide
+- Fedora 40, 41, 42, Rawhide
 - CentOS 7, 8 Stream, 9 Stream
 - RHEL 7, 8, 9
 
