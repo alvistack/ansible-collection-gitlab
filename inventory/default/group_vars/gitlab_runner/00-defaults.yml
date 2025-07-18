@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # gitlab_runner
-gitlab_runner_release: "18.1"
+gitlab_runner_release: "18.2"
 gitlab_runner_concurrent: "1"
 gitlab_runner_runners:
   - { name: alvistack/gitlab-runner, url: "", token: "" }
