@@ -2,6 +2,7 @@
 
 ## YYYYMMDD.Y.Z - TBC
 
+- Remove Ubuntu 24.10 support
 - Support Debian 13
 
 ## 20250817.1.1 - 2025-08-17
