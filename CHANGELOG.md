@@ -2,6 +2,10 @@
 
 ## YYYYMMDD.Y.Z - TBC
 
+- Support Fedora 43
+- Remove Fedora 41 support
+- Support Ansible community package 13.2.0
+
 ## 20251008.1.1 - 2025-10-08
 
 - Support Ansible community package 12.1.0
