@@ -2,6 +2,7 @@
 
 ## YYYYMMDD.Y.Z - TBC
 
+- Remove Ubuntu 25.04 support
 - Support openSUSE Leap 16.0
 - Support RHEL 10
 - Support Fedora 43
